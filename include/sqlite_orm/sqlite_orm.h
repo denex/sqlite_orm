@@ -4059,7 +4059,7 @@ namespace sqlite_orm {
                     this->set_pragma("user_version", value);
                 }
                 
-                friend class storage_t<Ts...>;
+                friend struct storage_t<Ts...>;
                 
             protected:
                 storage_type &storage;
